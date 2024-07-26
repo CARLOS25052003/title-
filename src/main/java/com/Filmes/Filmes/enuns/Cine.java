@@ -1,5 +1,5 @@
 package com.Filmes.Filmes.enuns;
 
-public enum cine {
+public enum Cine {
     Public, Private, Deluxe
 }

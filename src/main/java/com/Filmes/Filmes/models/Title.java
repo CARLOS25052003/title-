@@ -1,10 +1,10 @@
 package com.Filmes.Filmes.models;
 
+import com.Filmes.Filmes.enuns.Genre;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.*;
 
-import java.util.Optional;
 import java.util.OptionalDouble;
 
 @Getter
@@ -15,7 +15,7 @@ public class Title {
     private String title;
     @Getter
     @Setter
-    private String genre;
+    private Genre genre;
     @Setter
     @Getter
     private int year;
@@ -27,7 +27,7 @@ public class Title {
     private int duration;
     @Getter
     @Setter
-    private OptionalDouble assessment;
+    public OptionalDouble assessment;
     //calculo de avaliação de 5 total de nota/pessoas
 
 
