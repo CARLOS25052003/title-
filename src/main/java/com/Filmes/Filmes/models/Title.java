@@ -12,6 +12,11 @@ import java.util.OptionalDouble;
 @AllArgsConstructor
 
 public class Title {
+    @Getter
+    @Setter
+    public String id;
+    @Getter
+    @Setter
     private String title;
     @Getter
     @Setter

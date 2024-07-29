@@ -12,13 +12,20 @@ public class Poster {
     public ArrayList<Movie> movies;
 
     public Poster(ArrayList<Movie> movies) {
-    this.movies = movies;
+        this.movies = movies;
     }
 
-public void addMovie(Movie movie) {
-    movies.add(movie);
-}
-public void removeMovie(Movie movie) {
-    movies.remove(movie);
-}
+    public void addMovie(Movie movie) {
+        movies.add(movie);
+    }
+
+    public void removeMovie(Movie movie) {
+        movies.remove(movie);
+    }
+    public void trocarMovie(Movie movie) {
+        movies.remove(movie);
+        movies.add(movie);
+    }
+
+
 }

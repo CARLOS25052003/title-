@@ -8,6 +8,6 @@ import java.util.OptionalDouble;
 
 public class filmeController {
 
-    Movie mew = new Movie("deeadpoll", Genre.COMEDIA,2021,"ALan wert",180, Cine.Deluxe, OptionalDouble.of(4.5));
+    // Movie mew = new Movie( "deeadpoll", Genre.COMEDIA,2021,"ALan wert",180, Cine.Deluxe, OptionalDouble.of(4.5));
 
 }
