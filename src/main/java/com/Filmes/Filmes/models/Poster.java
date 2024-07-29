@@ -11,6 +11,10 @@ public class Poster {
     private int durationDays;
     public ArrayList<Movie> movies;
 
+    public Poster(ArrayList<Movie> movies) {
+    this.movies = movies;
+    }
+
 public void addMovie(Movie movie) {
     movies.add(movie);
 }
