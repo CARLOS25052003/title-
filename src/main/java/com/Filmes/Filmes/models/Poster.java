@@ -16,16 +16,25 @@ public class Poster {
     }
 
     public void addMovie(Movie movie) {
-        movies.add(movie);
+        if (movie == null) {
+            throw new IllegalArgumentException("Movie cannot be null");
+        }
+
+        var movieIds = movies.stream()
+                .map(Movie::getId)
+                .toList();
+
+        if (!movieIds.contains(movie.getId()))
+            movies.add(movie);
+
     }
 
     public void removeMovie(Movie movie) {
         movies.remove(movie);
     }
+
     public void trocarMovie(Movie movie) {
         movies.remove(movie);
         movies.add(movie);
     }
-
-
 }

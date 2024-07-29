@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.OptionalDouble;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -68,7 +69,24 @@ class movieTest {
         poster.addMovie(movie2);
 
         assertEquals(4, poster.movies.size());
-        System.out.println(poster.movies);
+    }
+
+    @Test
+    void Adici() {
+
+
+
+        assertEquals(2, poster.movies.size());
+
+        poster.addMovie(movie2);
+
+        assertEquals(2, poster.movies.size());
+
+        poster.addMovie(movie2);
+
+        assertEquals(2, poster.movies.size());
+
+
     }
 
     @Test
