@@ -11,6 +11,8 @@ import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 class movieTest {
 
     Movie movie1 = new Movie(gerarID(), "deadpoll", Genre.COMEDIA, 2021, "ALan wert", 180, Cine.Deluxe, OptionalDouble.of(4.5));
