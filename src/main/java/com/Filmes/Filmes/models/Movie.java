@@ -6,7 +6,6 @@ import com.Filmes.Filmes.enuns.Genre;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.OptionalDouble;
 import java.util.UUID;
 
 

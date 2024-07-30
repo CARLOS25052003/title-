@@ -7,8 +7,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
+import java.util.Queue;
 
-//@Document(Collection = "users")
+@Document(collection = "users")
 public class Poster {
     @Getter
     @Setter
@@ -21,6 +23,7 @@ public class Poster {
         this.movieWait = movieWait;
 
     }
+    public Queue<Movie> moviesQueue = new LinkedList<Movie>();
 
     public void addMovie(Movie movie) {
         if (movie == null) {
@@ -45,4 +48,5 @@ public class Poster {
         movies.remove(movie);
         movies.add(movie);
     }
+
 }

@@ -4,11 +4,7 @@ import com.Filmes.Filmes.enuns.Cine;
 import com.Filmes.Filmes.enuns.Genre;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.OptionalDouble;
-import java.util.UUID;
-import java.util.stream.Collectors;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,6 +16,12 @@ class movieTest {
     Movie movie4 = new Movie(gerarID(), "Amor Doce", Genre.ROMANCE, 2013, "Gentulio perus", 166, Cine.Public, 4.0);
     Movie movie5 = new Movie(gerarID(), "Indiana-jones", Genre.AVENTURA, 1999, "Guto lima", 240, Cine.Public, 2.7);
     Movie movie6 = new Movie(gerarID(), "Guerra-canudos", Genre.ACAO, 1978, "General otavis", 140, Cine.Private, 1.9);
+
+    public Queue<Movie> moviesQueue = new LinkedList<Movie>();
+
+    public Queue<Movie> getMoviesQueue() {
+        return moviesQueue;
+    }
 
     ArrayList<Movie> movies = new ArrayList<>(
             Arrays.asList(movie1, movie2, movie3)

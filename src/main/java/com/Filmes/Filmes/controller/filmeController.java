@@ -37,19 +37,17 @@ public class filmeController {
     );
 
     Poster poster = new Poster(movies, movieWait);
-
     @ResponseBody
     @RequestMapping("/Movies")
-    public ArrayList<Movie> poster () {
+    public Poster poster () {
 
-        return movies;
+        return poster;
     }
 
     @ResponseBody
     @RequestMapping("/{nome}")
     public Movie poster (@PathVariable String nome){
         var movie = movies.stream().filter(it -> it.getTitle().equals(nome)) ;
-
         return movie.findFirst().get();
     }
 }

@@ -26,5 +26,6 @@ class MediaCalculatorTest {
     void calcularMedia() {
         assertEquals(movie1.getAssessment(), 0.0);
 
+
     }
 }

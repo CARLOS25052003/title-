@@ -5,8 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.*;
 
-import java.util.OptionalDouble;
-
 @Getter
 @Setter
 @AllArgsConstructor
@@ -33,6 +31,7 @@ public class Title {
     @Getter
     @Setter
     public Double assessment;
+
     //calculo de avaliação de 5 total de nota/pessoas
 
 
