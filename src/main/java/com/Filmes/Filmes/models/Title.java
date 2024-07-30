@@ -32,7 +32,7 @@ public class Title {
     private int duration;
     @Getter
     @Setter
-    public OptionalDouble assessment;
+    public Double assessment;
     //calculo de avaliação de 5 total de nota/pessoas
 
 
