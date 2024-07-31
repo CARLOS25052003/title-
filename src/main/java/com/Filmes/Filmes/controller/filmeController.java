@@ -16,12 +16,12 @@ import java.util.UUID;
 @Controller
 public class filmeController {
 
-    Movie movie1 = new Movie(gerarID(), "deadpoll", Genre.COMEDIA, 2021, "ALan wert", 180, Cine.Deluxe,4.5);
-    Movie movie2 = new Movie(gerarID(), "Red 2", Genre.ACAO, 2019, "David trust", 220, Cine.Deluxe,4.2);
-    Movie movie3 = new Movie(gerarID(), "Homem-aranha", Genre.ACAO, 2016, "Luiz gumares", 140, Cine.Private,4.9);
-    Movie movie4 = new Movie(gerarID(), "Amor Doce", Genre.ROMANCE, 2013, "Gentulio perus", 166, Cine.Public,4.0);
-    Movie movie5 = new Movie(gerarID(), "Indiana-jones", Genre.AVENTURA, 1999, "Guto lima", 240, Cine.Public,2.7);
-    Movie movie6 = new Movie(gerarID(), "Guerra-canudos", Genre.ACAO, 1978, "General otavis", 140, Cine.Private,1.9);
+    Movie movie1 = new Movie(gerarID(), "deadpoll", Genre.COMEDIA, 2021, "ALan wert", 180, Cine.Deluxe,0);
+    Movie movie2 = new Movie(gerarID(), "Red 2", Genre.ACAO, 2019, "David trust", 220, Cine.Deluxe,0);
+    Movie movie3 = new Movie(gerarID(), "Homem-aranha", Genre.ACAO, 2016, "Luiz gumares", 140, Cine.Private,0);
+    Movie movie4 = new Movie(gerarID(), "Amor Doce", Genre.ROMANCE, 2013, "Gentulio perus", 166, Cine.Public,0);
+    Movie movie5 = new Movie(gerarID(), "Indiana-jones", Genre.AVENTURA, 1999, "Guto lima", 240, Cine.Public,0);
+    Movie movie6 = new Movie(gerarID(), "Guerra-canudos", Genre.ACAO, 1978, "General otavis", 140, Cine.Private,0);
 
 
     public String gerarID() {

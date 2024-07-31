@@ -1,9 +1,9 @@
 package com.Filmes.Filmes.models;
 
 import com.Filmes.Filmes.enuns.Genre;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.*;
 
 @Getter
 @Setter
@@ -30,9 +30,37 @@ public class Title {
     private int duration;
     @Getter
     @Setter
-    public Double assessment;
+    public int totalAvalia;
+    @Getter
+    @Setter
+    public double somaAvaliacao;
+    @Getter
+    @Setter
+    public double note;
 
-    //calculo de avaliação de 5 total de nota/pessoas
+    public Title(String id, String title, Genre genre, int year, String director, int duration, double note) {
+        this.id = id;
+        this.title = title;
+        this.genre = genre;
+        this.year = year;
+        this.director = director;
+        this.duration = duration;
+        this.note = note;
+        this.totalAvalia = 0;
+        this.somaAvaliacao = 0;
+    }
+
+    public void avalia (double nota) {
+        somaAvaliacao += nota;
+        totalAvalia++;
+    }
+
+    double pegaMedia() {
+        return somaAvaliacao / totalAvalia;
+    }
 
 
 }
+
+//Criar um usario
+
