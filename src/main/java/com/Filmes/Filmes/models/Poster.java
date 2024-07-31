@@ -48,5 +48,4 @@ public class Poster {
         movies.remove(movie);
         movies.add(movie);
     }
-
 }

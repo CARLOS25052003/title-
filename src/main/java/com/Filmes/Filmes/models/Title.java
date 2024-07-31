@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.text.DecimalFormat;
+
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -34,18 +37,14 @@ public class Title {
     @Getter
     @Setter
     public double somaAvaliacao;
-    @Getter
-    @Setter
-    public double note;
 
-    public Title(String id, String title, Genre genre, int year, String director, int duration, double note) {
+    public Title(String id, String title, Genre genre, int year, String director, int duration) {
         this.id = id;
         this.title = title;
         this.genre = genre;
         this.year = year;
         this.director = director;
         this.duration = duration;
-        this.note = note;
         this.totalAvalia = 0;
         this.somaAvaliacao = 0;
     }
@@ -63,4 +62,9 @@ public class Title {
 }
 
 //Criar um usario
+//Adicionar um banco de dados
+//
+//
+//
+//
 

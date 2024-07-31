@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MediaCalculatorTest {
 
-    Movie movie1 = new Movie(gerarID(), "deadpoll", Genre.COMEDIA, 2021, "ALan wert", 180, Cine.Deluxe,0);
+    Movie movie1 = new Movie(gerarID(), "deadpoll", Genre.COMEDIA, 2021, "ALan wert", 180, Cine.Deluxe);
 
 
     public String gerarID() {
@@ -30,16 +30,6 @@ class MediaCalculatorTest {
         movie1.avalia(5);
         assertEquals(3.5, movie1.pegaMedia());
 
-
-
-
     }
 
-    @Test
-    void media_is_4() {
-        //Movie com 16 de Nota
-        //Total de avaliações 4
-
-        //Espera que o assert seja 4 ao calcular a media do movie especifíco
-    }
 }
