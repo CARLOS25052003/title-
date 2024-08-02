@@ -52,8 +52,8 @@ public class filmeController {
     @ResponseBody
     @RequestMapping("/{nome}")
     public Movie poster(@PathVariable String nome) {
-        movie1.avalia(4);
-        movie1.avalia(8);
+        movie1.avalia(5);
+        movie1.avalia(5);
         movie1.avalia(5);
         movie1.setNote();
 
